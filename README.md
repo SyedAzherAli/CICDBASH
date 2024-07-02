@@ -21,7 +21,7 @@ This script is intended to be executed on your web hosting server where Apache i
 **Script (replace placeholders with your values):**
 
 ```bash
-#!/bin/bash
+
 
 # Replace with your Git repository URL
 REPO_URL="[https://github.com/new](https://github.com/new)"
@@ -32,11 +32,6 @@ CLONE_DIR="website"
 # Apache document root (adjust for your server configuration)
 APACHE_DIR="/var/www/html"
 
-# Clone the repository
-git clone $REPO_URL $CLONE_DIR
-
-# Create the directory if it doesn't exist
-mkdir -p $APACHE_DIR
 
 # Deploy website content
 rsync -avz $CLONE_DIR/ $APACHE_DIR
