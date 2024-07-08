@@ -6,7 +6,7 @@ This document demonstrates a streamlined CI/CD workflow using a single Bash scri
 
 * Clones the website repository from the specified URL (replace `https://github.com/new`) using `git clone`.
 * Creates a directory for the cloned repository content using `mkdir`.
-* Deploys the website content to the designated hosting server location on Apache using `rsync`.
+* Deploys the website content to the designated hosting server location on Apache using `cp cmd`.
 
 **Configuration Variables:**
 
